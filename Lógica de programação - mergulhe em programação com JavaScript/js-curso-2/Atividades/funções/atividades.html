@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Selecione uma atividade</h1>
+    <ul>
+        <li><a href="#" onclick="loadScript('ativ1.js')">Atividade 1</a></li>
+        <li><a href="#" onclick="loadScript('ativ2.js')">Atividade 2</a></li>
+        <li><a href="#" onclick="loadScript('ativ3.js')">Atividade 3</a></li>
+        <li><a href="#" onclick="loadScript('ativ4.js')">Atividade 4</a></li>
+        <li><a href="#" onclick="loadScript('ativ5.js')">Atividade 5</a></li>
+        <li><a href="#" onclick="loadScript('ativ6.js')">Atividade 6</a></li>
+    </ul>
+
+    <script>
+        function loadScript(scriptName) {
+            var script = document.createElement('script');
+            script.src = scriptName;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
