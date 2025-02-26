@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Selecione uma atividade</h1>
+    <ul>
+        <p>Crie uma lista vazia, com o nome listaGenerica.</p>
+        <li><a href="#" onclick="loadScript('ativ1.js')">Atividade 1</a></li>
+        <p>Crie uma lista de linguagens de programação chamada linguagensDeProgramacao com os seguintes elementos: 'JavaScript','C','C++', 'Kotlin' e 'Python'.</p>
+        <li><a href="#" onclick="loadScript('ativ2.js')">Atividade 2</a></li>
+        <p>Adicione à lista linguagensDeProgramacao os seguintes elementos: 'Java', 'Ruby' e 'GoLang'.</p>
+        <li><a href="#" onclick="loadScript('ativ3.js')">Atividade 3</a></li>
+        <p>Crie uma lista com 3 nomes e exiba no console apenas o primeiro elemento.</p>
+        <li><a href="#" onclick="loadScript('ativ4.js')">Atividade 4</a></li>
+        <p>Crie uma lista com 3 nomes e exiba no console apenas o segundo elemento.</p>
+        <li><a href="#" onclick="loadScript('ativ5.js')">Atividade 5</a></li>
+        <p>Crie uma lista com 3 nomes e exiba no console apenas o último elemento.</p>
+        <li><a href="#" onclick="loadScript('ativ6.js')">Atividade 6</a></li>
+        <!--
+        <li><a href="#" onclick="loadScript('ativ7.js')">Atividade 7</a></li>
+        <li><a href="#" onclick="loadScript('ativ8.js')">Atividade 8</a></li>
+        <li><a href="#" onclick="loadScript('ativ9.js')">Atividade 9</a></li>
+        <li><a href="#" onclick="loadScript('ativ10.js')">Atividade 10</a></li>
+        <li><a href="#" onclick="loadScript('ativ11.js')">Atividade 11</a></li>
+        <li><a href="#" onclick="loadScript('ativ12.js')">Atividade 12</a></li>
+        -->
+    </ul>
+
+    <script>
+        function loadScript(scriptName) {
+            var script = document.createElement('script');
+            script.src = scriptName;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
