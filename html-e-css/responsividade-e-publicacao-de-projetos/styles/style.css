@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #2f2f2f;
+
+    --fonte-primaria: Montserrat, sans-serif;
+    --fonte-secundaria: Inter Tight, sans-serif;
+}
+
+/*
+ * Esta regra CSS aplica um seletor universal (*) para redefinir a margem e o preenchimento de todos os elementos para 0.
+ * É comumente usada para criar um ponto de partida consistente para a estilização, removendo os estilos padrão do navegador.
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 
+        A propriedade height está definida como 100vh, o que significa que a altura do elemento será 100% da altura da janela de visualização. Isso garante que o elemento sempre ocupará toda a altura da área visível da janela do navegador.
+        
+        height: 100vh;
+    */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.container {
+    flex: 1;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-conteudo-titulo {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+    font-weight: 900;
+}
+
+.container-conteudo-texto {
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    line-height: 1.5;
+}
+
+.container-midias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.container-midias-subtitulo {
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+
+.container-midias-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 378px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.container-midias-box:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    width: 390px;
+    font-size: 24px;
+    
+}
+
+.container-midias-box img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-midias-box:hover img {
+    transform: scale(1.1); 
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 16px 0;
+    font-family: var(--fonte-primaria);
+    font-size: 12px;
+    font-weight: 500;
+}
