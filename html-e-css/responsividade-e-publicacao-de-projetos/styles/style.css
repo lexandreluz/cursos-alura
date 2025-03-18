@@ -169,5 +169,6 @@ body{
 
     .minha-imagem {
         width: 50%;
+        height: auto;
     }
 }
